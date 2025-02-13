@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etCantidad"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:hint="Cantidad" />
+
+    <EditText
+        android:id="@+id/etProducto"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Producto" />
+
+    <EditText
+        android:id="@+id/etPrecio"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Precio" />
+
+
+
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/black"
+        android:text="Agregar Producto" />
+
+
+    <TableLayout
+        android:id="@+id/tablaProductos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+
+        <TableRow>
+            <TextView android:text="Cantidad" android:layout_weight="1" />
+            <TextView android:text="Producto" android:layout_weight="1" />
+            <TextView android:text="Precio" android:layout_weight="1" />
+            <TextView android:text="Subtotal" android:layout_weight="1" />e
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/fila1"
+            android:visibility="gone">
+            <TextView android:id="@+id/tvCantidad1" android:layout_weight="1" />
+            <TextView android:id="@+id/tvProducto1" android:layout_weight="1" />
+            <TextView android:id="@+id/tvPrecio1" android:layout_weight="1" />
+            <TextView android:id="@+id/tvSubtotal1" android:layout_weight="1" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/fila2"
+            android:visibility="gone">
+            <TextView android:id="@+id/tvCantidad2" android:layout_weight="1" />
+            <TextView android:id="@+id/tvProducto2" android:layout_weight="1" />
+            <TextView android:id="@+id/tvPrecio2" android:layout_weight="1" />
+            <TextView android:id="@+id/tvSubtotal2" android:layout_weight="1" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/fila3"
+            android:visibility="gone">
+            <TextView android:id="@+id/tvCantidad3" android:layout_weight="1" />
+            <TextView android:id="@+id/tvProducto3" android:layout_weight="1" />
+            <TextView android:id="@+id/tvPrecio3" android:layout_weight="1" />
+            <TextView android:id="@+id/tvSubtotal3" android:layout_weight="1" />
+        </TableRow>
+    </TableLayout>
+
+
+    <TextView
+        android:id="@+id/tvSubtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="150dp"
+        android:text="Subtotal: 0.0" />
+
+    <TextView
+        android:id="@+id/tvIVA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="150dp"
+        android:text="IVA (16%): 0.0" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="150dp"
+        android:text="Total: 0.0" />
+
+</LinearLayout>
