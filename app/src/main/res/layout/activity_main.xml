@@ -49,7 +49,7 @@
             <TextView android:text="Cantidad" android:layout_weight="1" />
             <TextView android:text="Producto" android:layout_weight="1" />
             <TextView android:text="Precio" android:layout_weight="1" />
-            <TextView android:text="Subtotal" android:layout_weight="1" />e
+            <TextView android:text="Subtotal" android:layout_weight="1" />
         </TableRow>
 
 
